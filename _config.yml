@@ -132,3 +132,11 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+nofollow:
+  enable: ture
+  field: site
+  exclude:
+    - 'exclude1.com'
+    - 'exclude2.com'
+
