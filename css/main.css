@@ -1234,7 +1234,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #74a6d4;
+    background: #7c57a3;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1630,7 +1630,7 @@ pre code {
   width: 100%;
 }
 .with-love {
-  color: #f00;
+  color: #8f8f8f;
   display: inline-block;
   margin: 0 5px;
 }
