@@ -46,6 +46,7 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -115,4 +116,10 @@ search:
   field: post
   content: true
   format: html
+
+prism_plugin:
+  mode: "preprocess"
+  theme: "tomorrow"
+  line_number: false
+  custom_css:
 

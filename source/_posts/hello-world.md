@@ -37,3 +37,65 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+
+### Example C code
+
+``` c
+#include <stdio.h>
+
+// Function to calculate factorial
+unsigned long long factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int number;
+
+    // Input from user
+    printf("Enter a positive integer: ");
+    scanf("%d", &number);
+
+    if (number < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        printf("Factorial of %d = %llu\n", number, factorial(number));
+    }
+
+    return 0;
+}
+```
+
+### Example Rust code
+
+``` rust
+use std::io;
+
+fn factorial(n: u64) -> u64 {
+    if n == 0 || n == 1 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
+}
+
+fn main() {
+    let mut input = String::new();
+
+    // Input from user
+    println!("Enter a positive integer: ");
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+
+    let number: u64 = input.trim().parse().expect("Please enter a valid number");
+
+    if number < 0 {
+        println!("Factorial is not defined for negative numbers.");
+    } else {
+        println!("Factorial of {} = {}", number, factorial(number));
+    }
+}
+
+```
