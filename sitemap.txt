@@ -1,5 +1,5 @@
-https://jhermit.github.io/tags/index.html
 https://jhermit.github.io/categories/index.html
+https://jhermit.github.io/tags/index.html
 https://jhermit.github.io/posts/4a17b156/
 https://jhermit.github.io/about/index.html
 https://jhermit.github.io/
