@@ -13,7 +13,7 @@ timezone: Asia/Taipei
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://codemaverick.github.io/
+url: https://jhermit.github.io/
 root: /
 permalink: posts/:abbrlink/
 permalink_defaults:
@@ -123,3 +123,12 @@ prism_plugin:
   line_number: false
   custom_css:
 
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap.xml
+  template_txt: ./sitemap.txt
+  rel: false
+  tags: true
+  categories: true
