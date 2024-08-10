@@ -109,7 +109,7 @@ deploy:
 
 abbrlink:
   alg: crc32
-  rep: hex
+  rep: dec
 
 search:
   path: search.xml
