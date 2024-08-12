@@ -69,6 +69,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  RISC-V: RISC-V
+  隨手筆記: Jottings
+  筆記: Notes
+  茶包射手: Troubleshooting
 tag_map:
 
 # Metadata elements
