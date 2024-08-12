@@ -687,7 +687,7 @@ comments:
 # For more information: https://disqus.com
 disqus:
   enable: true
-  shortname: jhermittw
+  shortname: jhermit
   count: true
 
 # DisqusJS
