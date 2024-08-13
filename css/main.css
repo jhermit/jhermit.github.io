@@ -483,6 +483,27 @@ code.hljs {
 .hljs-strong {
   font-weight: bold
 }
+.highlight:hover .copy-btn,
+.code-container:hover .copy-btn {
+  opacity: 1;
+}
+.code-container {
+  position: relative;
+}
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  background: #fff;
+  border: 0;
+  font-size: 0.8125em;
+  right: 0;
+  top: 0;
+}
 code,
 kbd,
 figure.highlight,
@@ -1232,9 +1253,10 @@ pre code {
     margin-bottom: 10px;
     margin-right: 10px;
     vertical-align: middle;
+    transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #ff1c37;
+    background: #77ff0b;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1666,7 +1688,6 @@ pre code {
 }
 .back-to-top span {
   margin-right: 8px;
-  display: none;
 }
 .back-to-top .fa {
   text-align: center;
@@ -1690,6 +1711,16 @@ pre code {
 }
 .back-to-top.back-to-top-on {
   bottom: 30px;
+}
+.reading-progress-bar {
+  --progress: 0;
+  background: #37c6c0;
+  height: 10px;
+  position: fixed;
+  z-index: 50;
+  width: var(--progress);
+  left: 0;
+  bottom: 0;
 }
 .rtl.post-body p,
 .rtl.post-body a,
@@ -2596,17 +2627,6 @@ header.header {
 }
 .menu .menu-item a .badge {
   margin-left: auto;
-}
-.menu .menu-item a.menu-item-active::after {
-  background: #bbb;
-  border-radius: 50%;
-  content: ' ';
-  height: 6px;
-  margin-top: -3px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  width: 6px;
 }
 @media (max-width: 991px) {
   .menu .menu-item.menu-item-search {
